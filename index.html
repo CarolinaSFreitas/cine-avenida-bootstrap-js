@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./logo-cine.png" type="image/x-icon">
+    <title>Cine Avenida</title>
+</head>
+
+<body>
+    <nav class="navbar bg-cineminha">
+        <div class="container-fluid mx-5">
+            <img src="./logo-cine.png" alt="cinema" width="95px">
+            <span class="navbar-brand mb-0 h1 text-white">Cine Avenida: Venda de Ingressos</span>
+        </div>
+    </nav>
+
+    <form class="container mt-4">
+        <div class="row mt-4">
+            <div class="col-md-4 offset-md-4">
+                <div class="card">
+
+                    <div class="card-header text-center">
+                        <h2>Escolha o Filme</h2>
+                    </div>
+
+                    <div class="card-body">
+                        <img src="./filme1.jpg" width="300px" alt="poster do filme em cartaz" id="capa"
+                            class="mx-auto d-block" style="box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);">
+                        <select class="form-select my-4" id="selFilme">
+                            <option value="hereditario" selected>Hereditário - R$12,00 </option>
+                            <option value="midsommar">Midsommar 3D - R$15,00</option>
+                            <option value="vinganca">V de Vingança - R$12,00</option>
+                            <option value="natureza">Na Natureza Selvagem 3D - R$15,00</option>
+                            <option value="futuro">De Volta pro Futuro - R$12,00</option>
+
+                        </select>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h3 class="text-end mt-3">Nº Ingressos:</h3>
+                            </div>
+
+                            <div class="col-md-4">
+                                <select class="form-select my-3" id="selQuant">
+                                    <option selected>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer my-3 mb-1">
+                        <h3>Total R$:
+                            <span id="spanTotal" class="float-end me-2"></span>
+                        </h3>
+                        <button type="button" class="btn btn-lg btn-outline-dark mt-4 col-12">Comprar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
